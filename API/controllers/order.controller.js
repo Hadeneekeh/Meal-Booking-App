@@ -8,6 +8,14 @@ const OrderController = {
       data: allOrders,
     });
   },
+  addAnOrder(req, res) {
+    const newOrder = req.body;
+    const createdOrder = OrderService.addOrder(newOrder);
+    return res.status(201).json({
+      status: 'success',
+      data: createdOrder,
+    });
+  },
 };
 
 export default OrderController;
