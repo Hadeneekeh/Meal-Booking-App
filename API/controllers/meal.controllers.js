@@ -9,6 +9,15 @@ const MealController = {
       data: allMeals,
     });
   },
+
+  addAMeal(req, res) {
+    const newMeal = req.body;
+    const createdMeal = MealService.addMeal(newMeal);
+    return res.status(201).json({
+      status: 'success',
+      data: createdMeal,
+    });
+  },
 };
 
 export default MealController;

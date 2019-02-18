@@ -12,6 +12,15 @@ const MealService = {
     });
     return validMeals;
   },
+
+  addMeal(meal) {
+    const mealLength = dummyData.meals.length;
+    const lastId = dummyData.meals[mealLength - 1].id;
+    const newId = lastId + 1;
+    meal.id = newId;
+    dummyData.meals.push(meal);
+    return meal;
+  },
 };
 
 export default MealService;
