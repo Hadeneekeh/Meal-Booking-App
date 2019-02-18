@@ -10,6 +10,14 @@ const MenuController = {
       data: createdMenu,
     });
   },
+
+  getAllMenus(req, res) {
+    const allMenus = MenuService.getAllMenus();
+    return res.status(200).json({
+      status: 'success',
+      data: allMenus,
+    });
+  },
 };
 
 
