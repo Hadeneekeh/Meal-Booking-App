@@ -31,4 +31,15 @@ export default {
       name: 'Semo',
     },
   ],
+
+  menus: [
+    {
+      id: 1,
+      name: 'Rice',
+    },
+    {
+      id: 2,
+      name: 'Swallow',
+    },
+  ],
 };

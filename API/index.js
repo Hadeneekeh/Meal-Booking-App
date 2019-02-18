@@ -1,6 +1,7 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 
+import menuRoutes from './routes/menu.route';
 import orderRoutes from './routes/order.route';
 import mealRoutes from './routes/meal.route';
 
@@ -11,6 +12,7 @@ app.use(bodyParser.json());
 
 app.get('/', (req, res) => res.send('Server setup is fine'));
 
+app.use('/api/v1/menus', menuRoutes);
 app.use('/api/v1/orders', orderRoutes);
 app.use('/api/v1/meals', mealRoutes);
 
