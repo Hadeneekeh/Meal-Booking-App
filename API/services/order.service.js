@@ -11,6 +11,15 @@ const OrderService = {
     });
     return validOrders;
   },
+
+  addOrder(order) {
+    const orderLength = dummyData.orders.length;
+    const lastId = dummyData.meals[orderLength - 1].id;
+    const newId = lastId + 1;
+    order.id = newId;
+    dummyData.orders.push(order);
+    return order;
+  },
 };
 
 
