@@ -1,0 +1,38 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "A Meal Booking App",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hadeneekeh/Meal-Booking-App.git"
+  },
+  "keywords": [
+    "Meal",
+    "ALCwithforLoop",
+    "CRUD"
+  ],
+  "author": "Kafila",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Hadeneekeh/Meal-Booking-App/issues"
+  },
+  "homepage": "https://github.com/Hadeneekeh/Meal-Booking-App#readme",
+  "dependencies": {
+    "@babel/core": "^7.3.3",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "babel-cli": "^6.26.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "eslint": "^5.14.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "nodemon": "^1.18.10"
+  }
+}
