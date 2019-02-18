@@ -20,4 +20,5 @@ const MealController = {
   },
 };
 
+
 export default MealController;

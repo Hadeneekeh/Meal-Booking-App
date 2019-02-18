@@ -16,4 +16,19 @@ export default {
       price: '200',
     },
   ],
+
+  orders: [
+    {
+      id: 1,
+      name: 'Fried Rice',
+    },
+    {
+      id: 2,
+      name: 'Jollof Rice',
+    },
+    {
+      id: 3,
+      name: 'Semo',
+    },
+  ],
 };
